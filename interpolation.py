@@ -23,7 +23,7 @@ def p(theta,u,v,w):
 def rho(theta):
     return np.exp(2*np.pi*1j*theta)
 
-# amtrix U from non-commutative torus
+# matrix U from non-commutative torus
 def MU(z1,rho,q):
     D1 = rho * np.ones(q)
     D2 = np.ones(q).cumsum() -1
@@ -31,7 +31,7 @@ def MU(z1,rho,q):
     M = z1 * np.diag(D)
     return M
 
-# amtrix V from non-commutative torus
+# matrix V from non-commutative torus
 def MV(z2,q):
     M = np.diag(np.ones(q-1), k=-1)
     M[0,-1] = 1
