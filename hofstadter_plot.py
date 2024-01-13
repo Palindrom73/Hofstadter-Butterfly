@@ -60,7 +60,7 @@ if __name__== "__main__":
 	for alpha in alpharr:
 		theta[:]=alpha
 		for centre in centre_arr:
-			ew = np.array(np.linalg.eigvalsh(H(alpha,centre,u,v)))
+			ew = np.array(np.linalg.eigvalsh(M(alpha,centre,u,v)))
 			ax.plot(theta*np.ones_like(ew), (ew - 2*w*np.cos(2*np.pi*theta))/2, ",", color="blue", markersize=0.001)
 
 	ax.set_xlim(0-1/40,1+1/40)
