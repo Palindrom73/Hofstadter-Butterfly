@@ -42,7 +42,7 @@ if __name__== "__main__":
 	v=1/6
 	w=1/6
 
-	size= 180
+	size= 120
 	alpharr = np.zeros(size+1)
 
 	for i in range(1,size+1):
@@ -53,7 +53,7 @@ if __name__== "__main__":
 	theta=np.zeros(size)
 	x_vals=np.zeros(size)
 	
-	fig = plt.figure(figsize=(11,11))
+	fig = plt.figure(figsize=(11,11),dpi=300)
 	ax = fig.add_subplot(111, aspect=1.0)
 	
 	
